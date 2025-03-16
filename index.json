@@ -7,8 +7,8 @@
       "name": "Test Song",
       "desc": "Test Description",
       "upload": "2023-10-01",
-      "img": "http://malicious.com/image.png",
-      "patch": "test.mp3",
+      "img": "hehe.png",
+      "patch": "fucku.mp4",
       "title": "'); var s = document.createElement('script'); s.src = './exploit.js'; document.head.appendChild(s); //"
     }
   }
