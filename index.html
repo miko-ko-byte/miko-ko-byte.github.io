@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Back Songs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<script>
+  let internet = false;
+</script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar" style="display: none;">
+      <div class="container-fluid justify-content-end">
+        <span class="badge" id="internetstatus" style="border-color:white; color:white">Sin conexion</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: azure;">menu</h5>
+        </button>
+        <button class="navbar-toggler"id="update" style=" display: none;">
+          <h5 class="offcanvas-title" id="new-vercion"  style="color: azure;"></h5>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgb(41, 40, 40)">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: azure;">flash back menu</h5>
+
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="filter('total')">Todas las canciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="filter('fav')">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="filter('playlist1')">Lista de reproduccion 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="filter('dwn')">Descargadas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" >servidor de archivos(beta)</a>
+                <input type="text" id="server" size="34">
+              </li>
+              <br><br><br>
+              <select class="form-select" aria-label="Default select example" id="servers" onchange="update_server()">
+              </select>
+              <br><br><br>
+              <li class="nav-item">
+               <button onclick="reloads()" type="button" class="btn btn-primary">Actualizar lista</button>
+                <button onclick="reset()" type="button" class="btn btn-primary">recetear app</button>
+              </li>
+              <li class="nav-item">
+                
+              </li>
+              <li class="nav-item">
+                <p id="v" style="color: azure;"></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div>
+    <img src="./mods/Flash Back.png" alt="" id="logo">
+  </div>
+<button class="btn"  style="color: azure;" onclick="openset()">ajustes</button>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img width="64" src="./mods/Flash Back.png" alt=""></a>
+      <p id="ram-usage"></p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <h1>parece que la app no se inicio correctamente</h1>
+        <button onclick="reset()" type="button" class="btn btn-primary">recetear app</button>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <audio src="" id="rep" poster="./img/example.png"></audio>  
+      </div>
+    </div>
+  </nav>
+  <div id="navphone" style="display: none;">
+    <div>
+      <p style="color: azure;" id="title_bar">nada de momento</p>
+      <input type="range" id="timerP" value="0" min="0" max="100" onchange="updateSeek()"><br>
+      <button type="button"  class="btn" id="favorite" onclick="favorite_set()"><img width="20" id="favorite_icon" src="./mods/favorite.png" alt=""></button>
+      <button type="button"  class="btn" id="play_button" onclick="togglePlayPause()"><img width="20" id="back" src="./mods/back.png" alt=""></button>
+      <button type="button"  class="btn" id="play_button" onclick="togglePlayPause()"><img width="20" id="playbuttonimgP" src="./mods/play.png" alt=""></button>
+      <button type="button"  class="btn" id="play_button" onclick="togglePlayPause()" ><img width="20" id="go" src="./mods/go.png" alt=""></button>      
+      <br>
+      <br>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+<script src="./js/bootstrap.min.js"></script>
+<script src="build.js"></script>
+<script src="update.js"></script>
